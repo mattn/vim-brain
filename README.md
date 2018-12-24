@@ -19,7 +19,7 @@ function! s:test() abort
 
   let l:ff = brain#new_feed()
 
-  let l:ff.Init(2, 2, 1)
+  call l:ff.Init(2, 2, 1)
 
   call l:ff.Train(l:patterns, 1000, 0.6, 0.4, v:false)
 
